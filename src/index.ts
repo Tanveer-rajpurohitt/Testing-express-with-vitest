@@ -30,7 +30,7 @@ app.post("/sum", async (req:Request, res:Response): Promise<any> => {
     })
 
     res.json({
-        answer,
+        answer:answer,
         id: response.id
     })
 });
@@ -58,7 +58,7 @@ app.get("/sum", async (req:Request, res:Response): Promise<any> => {
     })
 
     res.json({
-        answer,
+        answer:answer,
         id: response.id
     })
 });
